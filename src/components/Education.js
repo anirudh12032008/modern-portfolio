@@ -31,7 +31,7 @@ const Education = () => {
   });
   return (
     <>
-      <div className="my-64">
+      <div className="my-20">
         <h2 className="font-bold text-6xl mb-32 text-center w-full">
           Education
         </h2>

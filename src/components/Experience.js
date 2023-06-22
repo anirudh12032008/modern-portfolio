@@ -40,7 +40,7 @@ const Experience = () => {
   });
   return (
     <>
-      <div className="my-64">
+      <div className="mt-20 mb-10">
         <h2 className="font-bold text-6xl mb-32 text-center w-full">
           Experience
         </h2>

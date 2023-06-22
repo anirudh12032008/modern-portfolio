@@ -35,7 +35,7 @@ const Skills = () => {
     <>
       <div className="container flex flex-col items-center justify-center  md:py-20 ">
         <div>
-          <h1 className="text-dark text-3xl"> Skills</h1>
+          <h1 className="!text-dark !text-6xl mb-16"> Skills</h1>
         </div>
         <div className="w-full pl-0  sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
           <BarView width={50}> Animation</BarView>
