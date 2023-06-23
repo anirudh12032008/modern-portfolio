@@ -11,6 +11,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
       <motion.div
         initial={{ y: 50 }}
         whileInView={{ y: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.8, type: "spring" }}
       >
         <h3 className="capitalize font-bold text-2xl">

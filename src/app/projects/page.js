@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Layout from "../../components/Layout";
 import Head from "next/head";
@@ -6,6 +7,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
 import img1 from "../../../public/projects/crypto-screener-cover-image.jpg";
+import { motion } from "framer-motion";
+
+const FramerImage = motion(Image);
 
 const FeaturedProjects = ({ type, title, link, img, github, summary }) => {
   return (
@@ -16,7 +20,13 @@ const FeaturedProjects = ({ type, title, link, img, github, summary }) => {
         target="_blank"
         className="w-1/2 overflow-hidden cursor-pointer rounded-lg"
       >
-        <Image src={img} alt={title} className="w-full h-auto " />
+        <FramerImage
+          src={img}
+          alt={title}
+          className="w-full h-auto "
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
       </Link>
 
       <div className="w-1/2 flex flex-col items-start justify-between pl-6">
@@ -55,7 +65,13 @@ const Project = ({ type, title, link, img, github }) => {
         target="_blank"
         className="w-full overflow-hidden cursor-pointer rounded-lg"
       >
-        <Image src={img} alt={title} className="w-full h-auto " />
+        <FramerImage
+          src={img}
+          alt={title}
+          className="w-full h-auto "
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
       </Link>
 
       <div className="w-full flex flex-col items-start justify-between mt-4">

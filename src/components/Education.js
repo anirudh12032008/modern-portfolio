@@ -11,6 +11,7 @@ const Details = ({ type, time, place, info }) => {
       <motion.div
         initial={{ y: 50 }}
         whileInView={{ y: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.8, type: "spring" }}
       >
         <h3 className="capitalize font-bold text-2xl">{type}</h3>
