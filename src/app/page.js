@@ -21,7 +21,7 @@ export default function Home() {
 
       {/* <main className="">Home</main> */}
       <div>
-        <main className="flex  items-center text-dark w-full min-h-screen">
+        <main className="flex  items-center text-dark bg-light dark:bg-dark  dark:text-light w-full min-h-screen">
           <Layout className="pt-2">
             <div className="flex items-center justify-between w-full">
               <div className="w-1/2">
@@ -47,14 +47,14 @@ export default function Home() {
                   <Link
                     href="/"
                     target={"_blank"}
-                    className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2  border-solid border-transparent hover:border-dark"
+                    className="flex items-center dark:text-dark dark:bg-light bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:dark:bg-dark hover:dark:text-light hover:dark:border-light hover:bg-light hover:text-dark border-2  border-solid border-transparent hover:border-dark"
                   >
                     Resume <LinkArrow className={"w-6 ml-1"} />
                   </Link>
                   <Link
                     href="mailto:renudilip19@gmail.com@gmail.com"
                     target={"_blank"}
-                    className="text-lg ml-4 font-medium capitalize text-dark underline"
+                    className="text-lg ml-4 dark:text-light font-medium capitalize text-dark underline"
                   >
                     Contact
                   </Link>

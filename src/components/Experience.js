@@ -5,7 +5,7 @@ import LiIcon from "./LiIcon";
 
 const Details = ({ position, company, companyLink, time, address, work }) => {
   return (
-    <li className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-centre justify-center">
+    <li className="my-8 first:mt-0 dark:text-light last:mb-0 w-[60%] mx-auto flex flex-col items-centre justify-center">
       <LiIcon />
 
       <motion.div
@@ -19,12 +19,12 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
           <a
             href={companyLink}
             target="_blank"
-            className="text-primary capitalize"
+            className="text-primary dark:text-primaryDark capitalize"
           >
             @{company}
           </a>
         </h3>
-        <span className="capitalize font-medium text-dark/75">
+        <span className="capitalize font-medium dark:text-light/75 text-dark/75">
           {time} | {address}
         </span>
         <p className="font-medium w-full">{work}</p>
@@ -42,13 +42,13 @@ const Experience = () => {
   return (
     <>
       <div className="mt-20 mb-10">
-        <h2 className="font-bold text-6xl mb-32 text-center w-full">
+        <h2 className="font-bold dark:text-light text-6xl mb-32 text-center w-full">
           Experience
         </h2>
         <div ref={ref} className="w-[75%] mx-auto  font-light relative">
           <motion.div
             style={{ scaleY: scrollYProgress }}
-            className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top"
+            className="absolute left-9 top-0 w-[4px] h-full dark:bg-light bg-dark origin-top"
           />
           <ul className="w-full flex flex-col justify-between items-start ml-4">
             <Details

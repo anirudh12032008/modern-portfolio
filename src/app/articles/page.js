@@ -32,7 +32,7 @@ const MovingImg = ({ title, img, link }) => {
       onMouseMove={handleMouse}
       onMouseLeave={handleMouseLeave}
     >
-      <h2 className="capitalize text-xl font-semibold hover:underline">
+      <h2 className="capitalize dark:text-light text-xl font-semibold hover:underline">
         {title}
       </h2>
       <FramerImage
@@ -54,18 +54,18 @@ const Article = ({ date, title, img, link }) => {
       initial={{ y: 200 }}
       whileInView={{ y: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
       viewport={{ once: true }}
-      className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center border-r-4 border-b-4 justify-between bg-light text-dark first:mt-0 border border-solid border-dark "
+      className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center border-r-4 border-b-4 justify-between dark:text-light dark:bg-dark bg-light text-dark first:mt-0 border border-solid dark:border-light border-dark "
     >
       <MovingImg title={title} img={img} link={link} />
 
-      <span className="text-primary font-semibold pl-4">{date}</span>
+      <span className="text-primary dark:text-primaryDark font-semibold pl-4">{date}</span>
     </motion.li>
   );
 };
 
 const FeaturedArticles = ({ img, title, time, summary, link }) => {
   return (
-    <li className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl">
+    <li className="relative col-span-1 w-full p-4 bg-light border border-solid dark:bg-dark dark:border-light border-dark rounded-2xl">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl" />
 
       <Link
@@ -82,7 +82,7 @@ const FeaturedArticles = ({ img, title, time, summary, link }) => {
         />
       </Link>
       <Link href={link} target="_blank">
-        <h2 className="capitalize text-2xl font-bold my-2 mt-4 hover:underline ">
+        <h2 className="capitalize dark:text-light text-2xl font-bold my-2 mt-4 hover:underline ">
           {title}
         </h2>
       </Link>
@@ -102,7 +102,7 @@ const page = () => {
           content="This page contains some of my projects"
         />
       </Head>
-      <main className="flex mb-16 w-full flex-col overflow-hidden justify-center items-center">
+      <main className="flex dark:text-light  w-full flex-col overflow-hidden justify-center items-center">
         <Layout className="pt-16">
           <AnimatedText
             text={"Words Can Change The World!"}

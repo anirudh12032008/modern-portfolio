@@ -49,8 +49,8 @@ const page = () => {
         <Layout className="pt-16">
           <AnimatedText text="Passion fuels purpose!" className="mb-16" />
           <div className="grid w-full grid-cols-9 gap-16">
-            <div className="col-span-3 flex flex-col text-dark/75 items-start justify start">
-              <h2 className="mb-4 text-lg font-bold uppercase !text-dark/90  ">
+            <div className="col-span-3 flex flex-col dark:text-light/75 text-dark/75 items-start justify start">
+              <h2 className="mb-4 text-lg font-bold uppercase dark:!text-light/90 !text-dark/90  ">
                 BioGraphy
               </h2>
               <p className="font-medium">
@@ -74,8 +74,8 @@ const page = () => {
               </p>
             </div>
 
-            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid  border-dark bg-light p-8">
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
+            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid dark:border-light  border-dark dark:bg-dark bg-light p-8">
+              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] dark:bg-light bg-dark" />
               <Image
                 src={devImg}
                 alt="Anirudh Sahu"
@@ -85,26 +85,26 @@ const page = () => {
 
             <div className="col-span-3 flex flex-col items-end justify-between">
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold">
+                <span className="inline-block text-7xl dark:text-light font-bold">
                   <AnimatedNumbers value={50} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize dark:text-light/75 text-dark/75">
                   Satisfied Clients
                 </h2>
               </div>
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold">
+                <span className="inline-block text-7xl dark:text-light font-bold">
                   <AnimatedNumbers value={40} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize dark:text-light/75 text-dark/75">
                   Projects Completed
                 </h2>
               </div>
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold">
+                <span className="inline-block dark:text-light text-7xl font-bold">
                   <AnimatedNumbers value={20} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize dark:text-light/75 text-dark/75">
                   Bugs Fixed
                 </h2>
               </div>
