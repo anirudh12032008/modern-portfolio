@@ -29,6 +29,7 @@ export default function Home() {
                   src={profilePic}
                   alt="CodeBucks"
                   className="w-full h-auto"
+                  priority
                 />
               </div>
               <div className="w-1/2 flex flex-col items-center self-center">

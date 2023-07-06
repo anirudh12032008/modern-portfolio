@@ -80,6 +80,7 @@ const page = () => {
                 src={devImg}
                 alt="Anirudh Sahu"
                 className="w-full h-auto rounded-2xl"
+                priority
               />
             </div>
 
