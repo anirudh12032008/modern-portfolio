@@ -7,7 +7,7 @@ const Footer = () => {
     <>
       <footer className="w-full lg:text-base border-t-2  border-solid dark:border-light dark:text-light border-dark font-medium text-lg ">
         <Layout className="py-8 lg:py-6 flex lg:flex-col lg:p-3 items-center justify-between">
-          <span>2023 &copy; ALl Rights Reserved.</span>
+          <span>2023 &copy; ALL Rights Reserved.</span>
           <div className="flex lg:py-2 items-centre">
             Build With{" "}
             <span className="text-primary dark:text-primaryDark text-2xl px-1">
