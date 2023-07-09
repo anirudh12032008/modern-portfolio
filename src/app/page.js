@@ -8,6 +8,7 @@ import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
 import chat from "../../public/icons8-chat-message-94.png";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   return (

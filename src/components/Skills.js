@@ -2,16 +2,16 @@ import React, { useEffect, useRef } from "react";
 import { motion, useInView, useMotionValue, useSpring } from "framer-motion";
 function BarView({ width, children }) {
   const ref = useRef(null);
-  const isInView = useInView(ref, );
+  const isInView = useInView(ref);
 
   return (
     <div ref={ref}>
-      <div>
+      <div className="mt-3">
         <div className="flex items-end pb-3 justify-between">
-          <h4 className="font-body font-semibold uppercase dark:text-light text-black/80">
+          <h4 className="font-body font-semibold uppercase dark:text-light/90 text-black/80">
             {children}
           </h4>
-          <h3 className="font-body text-3xl font-bold dark:text-light/90 text-dark/90">
+          <h3 className="font-body text-3xl lg:text-2xl font-bold dark:text-light/90 text-dark/90">
             {width}%
           </h3>
         </div>
@@ -32,19 +32,20 @@ function BarView({ width, children }) {
 }
 const Skills = () => {
   return (
-    <>
-      <div className="container flex flex-col items-center justify-center  md:py-20 ">
-        <div>
-          <h1 className=" dark:!text-light !text-dark !text-6xl mb-16"> Skills</h1>
-        </div>
-        <div className="w-full pl-0  sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
-          <BarView width={50}> Animation</BarView>
-          <BarView width={90}> Javascript</BarView>
-          <BarView width={80}> HTML</BarView>
-          <BarView width={100}> CSS</BarView>
-        </div>
+    <div className="container mt-20 xl:mt-16 lg:mt-14 sm:mt-10 flex flex-col items-center justify-center  md:py-20 ">
+      <div>
+        <h1 className=" dark:!text-light !text-dark !text-6xl mb-16">
+          {" "}
+          Skills
+        </h1>
       </div>
-    </>
+      <div className="w-7/12 xl:w-10/12 lg:11/12 md:w-full  pl-2  lg:pt-0">
+        <BarView width={50}> Animation</BarView>
+        <BarView width={90}> Javascript</BarView>
+        <BarView width={80}> HTML</BarView>
+        <BarView width={100}> CSS</BarView>
+      </div>
+    </div>
   );
 };
 

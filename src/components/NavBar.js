@@ -178,7 +178,7 @@ const NavBar = () => {
               scale: 1,
               opacity: 1,
               transition: {
-                duration: 0.8,
+                duration: 0.6,
               },
             }}
             className="min-w-[70vw] flex flex-col z-30 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32 top-1/2 left-1/2 fixed -translate-x-1/2 -translate-y-1/2 justify-between items-center "

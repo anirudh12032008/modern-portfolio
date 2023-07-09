@@ -13,7 +13,7 @@ const FramerImage = motion(Image);
 
 const FeaturedProjects = ({ type, title, link, img, github, summary }) => {
   return (
-    <article className="w-full  flex items-center justify-between p-12 rounded-3xl border rounded-br-2xl relative border-solid dark:border-light border-dark dark:bg-dark bg-light shadow-2xl">
+    <article className="w-full lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl flex items-center justify-between p-12 rounded-3xl border rounded-br-2xl relative border-solid dark:border-light border-dark dark:bg-dark bg-light shadow-2xl">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] dark:bg-light bg-dark rounded-br-3xl" />
       <Link
         href={link}
@@ -30,13 +30,17 @@ const FeaturedProjects = ({ type, title, link, img, github, summary }) => {
       </Link>
 
       <div className="w-1/2 flex flex-col items-start justify-between pl-6">
-        <span className="text-primary dark:text-primaryDark font-medium text-xl">{type}</span>
+        <span className="text-primary dark:text-primaryDark font-medium text-xl">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 dark:text-light w-full text-left font-bold text-4xl">{title}</h2>
+          <h2 className="my-2 dark:text-light w-full text-left font-bold text-4xl">
+            {title}
+          </h2>
         </Link>
         <p className="py-2 font-medium dark:text-light text-dark">{summary}</p>
         <div className="mt-2 flex items-center">
@@ -76,16 +80,24 @@ const Project = ({ type, title, link, img, github }) => {
       </Link>
 
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary dark:text-primaryDark font-medium text-xl">{type}</span>
+        <span className="text-primary dark:text-primaryDark font-medium text-xl">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 dark:text-light w-full text-left font-bold text-3xl">{title}</h2>
+          <h2 className="my-2 dark:text-light w-full text-left font-bold text-3xl">
+            {title}
+          </h2>
         </Link>
         <div className="w-full mt-2 flex items-center justify-between">
-          <Link href={link} target="_blank" className="  text-lg dark:text-light font-semibold">
+          <Link
+            href={link}
+            target="_blank"
+            className="  text-lg dark:text-light font-semibold"
+          >
             Visit
           </Link>
           <Link href={github} alt="GitHub" className="w-8">
@@ -110,10 +122,10 @@ const page = () => {
       <main className="w-full  dark:bg-dark flex flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText
-            className="mb-16"
+            className="mb-16 md:mb-8"
             text={"Imagination Trumps Knowledge!"}
           />
-          <div className="grid grid-cols-12 gap-y-32 gap-24">
+          <div className="grid grid-cols-12 gap-y-32 gap-24 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-y-0">
             <div className="col-span-12">
               <FeaturedProjects
                 title={"Crypto Screener Application"}

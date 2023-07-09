@@ -10,9 +10,9 @@ const LiIcon = ({ scrollY }) => {
   //   console.log(scrollYProgress);
   //   console.log(scrollY);
   return (
-    <figure className="absolute left-0 dark:stroke-light stroke-dark">
+    <figure className="absolute left-0 md:-left-[14px] xs:-left-[24px] dark:stroke-light stroke-dark">
       <svg
-        className="-rotate-90"
+        className="-rotate-90 md:w-[70px] md:h-[70px] "
         width={"75"}
         height={"75"}
         viewBox="0 0 100 100"
@@ -25,7 +25,7 @@ const LiIcon = ({ scrollY }) => {
         />
 
         <motion.circle
-          //   style={{ pathLength: scrollY }}
+          style={{ pathLength: scrollY }}
           cx={"75"}
           cy={"50"}
           r={"20"}
