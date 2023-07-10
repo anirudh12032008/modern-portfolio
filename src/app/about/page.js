@@ -9,6 +9,7 @@ import devImg from "../../../public/developer-pic-2.jpg";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -44,6 +45,7 @@ const page = () => {
           content="This is about page of my portfolio website "
         />
       </Head>
+      <TransitionEffect />
 
       <main className="flex w-full flex-col justify-center items-center">
         <Layout className="pt-16 lg:p-12 md:p-10 sm:p-8">

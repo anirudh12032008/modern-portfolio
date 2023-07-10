@@ -9,6 +9,8 @@ import { LinkArrow } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
 import chat from "../../public/icons8-chat-message-94.png";
 import Skills from "@/components/Skills";
+import TransitionEffect from "@/components/TransitionEffect";
+import Wrapper from "@/components/wrapper";
 
 export default function Home() {
   return (
@@ -19,6 +21,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <TransitionEffect />
 
       {/* <main className="">Home</main> */}
       <div>

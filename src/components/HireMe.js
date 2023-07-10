@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const HireMe = () => {
   return (
-    <div className="fixed left-4 bottom-4 lg:absolute flex items-center lg:right-4 lg:left-auto lg:top-0 lg:bottom-auto justify-center overflow-hidden">
+    <div className="fixed left-4 bottom-4 lg:absolute flex items-center lg:right-4 lg:left-auto lg:top-0 lg:bottom-auto justify-center overflow-hidden sm:right-0">
       <div className="w-48 lg:w-36 md:w-28 h-auto flex items-center justify-center relative">
         <CircularText
           className={"dark:fill-light fill-dark  animate-spin-slow"}

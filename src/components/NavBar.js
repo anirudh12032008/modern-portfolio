@@ -78,7 +78,7 @@ const NavBar = () => {
   const [mode, setMode] = useThemeSwitcher();
   return (
     <>
-      <header className="w-full  lg:px-16 md:px-12 sm:px-8 relative dark:text-light dark:bg-dark px-32 py-8 font-medium text-lg flex items-center justify-between ">
+      <header className="w-full  lg:px-16 md:px-12 sm:px-8 relative dark:text-light dark:bg-dark pl-32 pr-16 py-8 font-medium text-lg flex items-center justify-between ">
         <button
           onClick={toggle}
           className="lg:flex   flex-col justify-center hidden items-center"
@@ -279,7 +279,7 @@ const NavBar = () => {
             </nav>
           </motion.div>
         ) : null}
-        <div className="absolute left-[50%] lg:left-[35%]  lg:translate-x-[30%]  translate-x-[-50]">
+        <div className="absolute left-[50%] lg:left-[40%] sm:left-[35%] lg:translate-x-[40%] sm:translate-x-[30%]  translate-x-[-50]">
           <Logo />
         </div>
       </header>
