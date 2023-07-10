@@ -7,7 +7,6 @@ import Footer from "@/components/Footer";
 import TransitionEffect from "@/components/TransitionEffect";
 import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
-import Wrapper from "@/components/wrapper";
 
 const montserrat = Montserrat({ subsets: ["latin"], weight: "600" });
 

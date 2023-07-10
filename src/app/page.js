@@ -10,7 +10,6 @@ import HireMe from "@/components/HireMe";
 import chat from "../../public/icons8-chat-message-94.png";
 import Skills from "@/components/Skills";
 import TransitionEffect from "@/components/TransitionEffect";
-import Wrapper from "@/components/wrapper";
 
 export default function Home() {
   return (
