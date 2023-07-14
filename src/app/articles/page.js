@@ -5,7 +5,10 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useRef } from "react";
-import img1 from "../../../public/articles/create loading screen in react js.jpg";
+import text from "../../../public/projects/3.jpg";
+import back from "../../../public/articles/art1.jpg";
+
+import img1 from "../../../public/projects/sample.png";
 import { motion, useMotionValue } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -116,26 +119,26 @@ const page = () => {
           />
           <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
             <FeaturedArticles
-              title={
-                "Build A Custom Pagination Component In Reactjs From Scratch"
-              }
+              title={"TextUtils "}
               summary={
-                "Learn how to build a custom pagination component in ReactJS from scratch. Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
+                "Text Utils is a new web-based tool created by our team using JavaScript and React JS. It offers a range of text transformation functions that make your life easier."
               }
-              link={"/"}
-              img={img1}
-              time={"9 min read"}
+              link={
+                "https://anirudh-sahu-portfolio.vercel.app/blog/introducing-text-utils---your-ultimate-text-transformation-tool!"
+              }
+              img={text}
+              time={"12 min read"}
             />
             <FeaturedArticles
-              title={
-                "Build A Custom Pagination Component In Reactjs From Scratch"
-              }
+              title={"Free Website Backgrounds"}
               summary={
-                "Learn how to build a custom pagination component in ReactJS from scratch. Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
+                "Website backgrounds are a great way to add a unique flair to your websites, and if you're looking to find some websites that offer you free backgrounds, you've come to the right place!"
               }
-              link={"/"}
-              img={img1}
-              time={"9 min read"}
+              link={
+                "https://anirudh-sahu-portfolio.vercel.app/blog/sites-that-offer-free-website-backgrounds"
+              }
+              img={back}
+              time={"10 min read"}
             />
           </ul>
           <h2 className="font-bold text-4xl w-full text-center my-16 mt-20">
@@ -143,49 +146,23 @@ const page = () => {
           </h2>
           <Article
             title={
-              "Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+              "Mastering React: Essential Tips and Tricks for Web Developers"
             }
-            date={"23 june 2023"}
+            date={"14 july 2023"}
+            img={img1}
+            link={"/"}
+          />
+          <Article
+            title={"JavaScript Frameworks Comparison: React, Angular, and Vue"}
+            date={"14 july 2023"}
             img={img1}
             link={"/"}
           />
           <Article
             title={
-              "Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+              "Building Scalable News Websites: Best Practices for Web Developers"
             }
-            date={"23 june 2023"}
-            img={img1}
-            link={"/"}
-          />
-          <Article
-            title={
-              "Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-            }
-            date={"23 june 2023"}
-            img={img1}
-            link={"/"}
-          />
-          <Article
-            title={
-              "Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-            }
-            date={"23 june 2023"}
-            img={img1}
-            link={"/"}
-          />
-          <Article
-            title={
-              "Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-            }
-            date={"23 june 2023"}
-            img={img1}
-            link={"/"}
-          />
-          <Article
-            title={
-              "Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
-            }
-            date={"23 june 2023"}
+            date={"14 july 2023"}
             img={img1}
             link={"/"}
           />

@@ -6,7 +6,13 @@ import AnimatedText from "../../components/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
-import img1 from "../../../public/projects/crypto-screener-cover-image.jpg";
+import magma from "../../../public/projects/1.jpg";
+import port from "../../../public/projects/2.jpg";
+import text from "../../../public/projects/3.jpg";
+import music from "../../../public/projects/4.jpg";
+import news from "../../../public/projects/5.jpg";
+import ai from "../../../public/projects/6.jpg";
+import quiz from "../../../public/projects/7.jpg";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -48,7 +54,7 @@ const FeaturedProjects = ({ type, title, link, img, github, summary }) => {
         </p>
         <div className="mt-2 flex items-center">
           <Link href={github} alt="GitHub" className=" ">
-            <div className={"bg-dark  dark:bg-light rounded-full"}>
+            <div className={"bg-light  dark:bg-dark rounded-full"}>
               <GithubIcon className={"w-[4vh] h-[4vh]"} />
             </div>
           </Link>
@@ -106,7 +112,7 @@ const Project = ({ type, title, link, img, github }) => {
             Visit
           </Link>
           <Link href={github} alt="GitHub" className=" ">
-            <div className={"bg-dark  dark:bg-light rounded-full"}>
+            <div className={"bg-light  dark:bg-dark rounded-full"}>
               <GithubIcon className={"w-[4vh] h-[4vh]"} />
             </div>
           </Link>
@@ -137,76 +143,78 @@ const page = () => {
           <div className="grid grid-cols-12 gap-y-32 gap-24 xl:gap-x-16 lg:gap-x-8 xs:gap-x-4 md:gap-y-24 sm:gap-y-6">
             <div className="col-span-12">
               <FeaturedProjects
-                title={"Crypto Screener Application"}
+                title={"Magma Clone"}
                 type={"Featured Projects"}
                 summary={
-                  "A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
+                  "I have cloned the website https://thisismagma.com/ as a web developer, replicating its stunning design, interactive features, and engaging content to create a visually captivating and user-friendly experience."
                 }
-                link={"/"}
-                img={img1}
-                github={"/"}
+                link={"https://anirudh12032008.github.io/magma_clone/"}
+                img={magma}
+                github={"https://github.com/anirudh12032008/magma_clone"}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title={"Crypto Screener Application"}
+                title={"Ask Ani AI"}
+                type={"Featured Projects"}
+                link={"https://ask-ani-image-ai.vercel.app/"}
+                img={ai}
+                github={"https://github.com/anirudh12032008/Ask_Ani_Image_AI"}
+              />{" "}
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title={"Developer Quiz"}
+                type={"Featured Projects"}
+                link={"https://anirudh12032008.github.io/developer-quiz/"}
+                img={quiz}
+                github={"https://github.com/anirudh12032008/developer-quiz"}
+              />{" "}
+            </div>
+            <div className="col-span-12">
+              {" "}
+              <FeaturedProjects
+                title={"Newsingo"}
                 type={"Featured Projects"}
                 summary={
-                  "A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
+                  "Newsingo is a dynamic news website crafted with React and JavaScript. It offers a seamless user experience, showcasing the latest news articles with an intuitive interface, keeping users informed and engaged."
                 }
-                link={"/"}
-                img={img1}
-                github={"/"}
+                link={"https://newsingo.vercel.app/"}
+                img={news}
+                github={"https://github.com/anirudh12032008/Newsingo"}
+              />
+            </div>
+
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title={"Text Utils"}
+                type={"Featured Projects"}
+                link={"https://anirudh12032008.github.io/TextUtils/"}
+                img={text}
+                github={"https://github.com/anirudh12032008/TextUtils"}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title={"Crypto Screener Application"}
-                type={"Featured Projects"}
-                summary={
-                  "A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-                }
+                title={"Music Player"}
+                type={"General Projects"}
                 link={"/"}
-                img={img1}
+                img={music}
                 github={"/"}
               />{" "}
             </div>
             <div className="col-span-12">
               {" "}
               <FeaturedProjects
-                title={"Crypto Screener Application"}
+                title={"Portfolio Website"}
                 type={"Featured Projects"}
                 summary={
-                  "A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
+                  "I have developed a portfolio website utilizing Sanity as the database. This allows for efficient content management, seamless integration of dynamic data, and a streamlined experience for showcasing my work."
                 }
-                link={"/"}
-                img={img1}
-                github={"/"}
+                link={"https://anirudh-sahu-portfolio.vercel.app/"}
+                img={port}
+                github={"https://github.com/anirudh12032008/Portfolio"}
               />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title={"Crypto Screener Application"}
-                type={"Featured Projects"}
-                summary={
-                  "A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-                }
-                link={"/"}
-                img={img1}
-                github={"/"}
-              />{" "}
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title={"Crypto Screener Application"}
-                type={"Featured Projects"}
-                summary={
-                  "A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-                }
-                link={"/"}
-                img={img1}
-                github={"/"}
-              />{" "}
             </div>
           </div>
         </Layout>

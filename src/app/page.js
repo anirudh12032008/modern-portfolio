@@ -3,7 +3,8 @@ import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
-import profilePic from "../../public/developer-pic-1.png";
+// import profilePic from "../../public/developer-pic-1.png";
+import profilePic from "../../public/d3.png";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
@@ -31,26 +32,28 @@ export default function Home() {
                 <Image
                   src={profilePic}
                   alt="CodeBucks"
-                  className="w-full h-auto lg:inline-block  lg:w-full"
+                  className="w-10/12 h-auto lg:inline-block  lg:w-10/12"
                   priority
                 />
               </div>
               <div className="w-1/2 flex lg:w-full flex-col items-center self-center">
                 <AnimatedText
-                  text="Turning Vision Into Reality With Code And Design."
-                  className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:text-6xl md:text-5xl sm:text-3xl"
+                  text="ANIRUDH SAHU"
+                  className="!text-8xl !text-left xl:!text-6xl lg:!text-center lg:!text-7xl md:!text-6xl sm:!text-4xl"
                 />
 
                 <p className="my-4 text-base font-medium  sm:text-sm">
-                  Ani OP As a skilled full-stack developer, I am dedicated to
-                  turning ideas into innovative web applications. latest
-                  projects and articles, showcasing my expertise in React.js and
-                  web development.
+                  A Young and talented 15-year-old full-stack web developer with
+                  a passion for frontend and backend technologies. Proficient in
+                  Node, Next.js, JavaScript for the frontend, and backend
+                  development. Showcasing my skills and dedication to crafting
+                  exceptional web applications.
                 </p>
-                <div className="flex items-center lg:self-center self-start mt-2">
+                <div className="flex items-center lg:self-center  self-start mt-2">
                   <Link
-                    href="/"
+                    href="/resume.pdf"
                     target={"_blank"}
+                    download={true}
                     className="flex items-center md:p-2 md:px-4 md:text-base dark:text-dark dark:bg-light bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:dark:bg-dark hover:dark:text-light hover:dark:border-light hover:bg-light hover:text-dark border-2  border-solid border-transparent hover:border-dark"
                   >
                     Resume <LinkArrow className={"w-6 ml-1"} />

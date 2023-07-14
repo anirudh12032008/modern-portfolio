@@ -5,7 +5,7 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
-import devImg from "../../../public/developer-pic-2.jpg";
+import devImg from "../../../public/devImg2.jpg";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
@@ -14,7 +14,7 @@ import TransitionEffect from "@/components/TransitionEffect";
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
   const motionValue = useMotionValue(0);
-  const springValue = useSpring(motionValue, { duration: 3000 });
+  const springValue = useSpring(motionValue, { duration: 4500 });
 
   const isInView = useInView(ref, { once: true });
   useEffect(() => {
@@ -47,7 +47,7 @@ const page = () => {
       </Head>
       <TransitionEffect />
 
-      <main className="flex w-full flex-col justify-center items-center">
+      <main className="flex  w-full flex-col justify-center items-center">
         <Layout className="pt-16 lg:p-12 md:p-10 sm:p-8">
           <AnimatedText
             text="Passion fuels purpose!"
@@ -59,23 +59,29 @@ const page = () => {
                 BioGraphy
               </h2>
               <p className="font-medium">
-                Hi, I'm CodeBucks, a web developer and UI/UX designer with a
-                passion for creating beautiful, functional, and user-centered
-                digital experiences. With 4 years of experience in the field. I
-                am always looking for new and innovative ways to bring my
-                clients' visions to life.
+                Hello, I'm ANIRUDH SAHU, a passionate and driven 15-year-old
+                full-stack web developer. With a deep love for both frontend and
+                backend development. I specialize in utilizing technologies like
+                Node.js, React.js, Next.js, and JavaScript to create captivating
+                user experiences.
               </p>
-              <p className=" my-4 font-medium">
+              <p className="my-4 font-medium">
+                From crafting elegant and responsive frontend designs to
+                architecting robust backend solutions, I thrive on transforming
+                ideas into powerful web applications. With a keen eye for detail
+                and a dedication to clean code, I pride myself on delivering
+                high-quality projects.
+              </p>
+              <p className=" mb-4 font-medium">
                 I believe that design is about more than just making things look
                 pretty – it's about solving problems and creating intuitive,
                 enjoyable experiences for users.
               </p>
-              <p className=" font-medium">
-                Whether I'm working on a website, mobile app, or other digital
-                product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
+              <p className="font-medium">
+                Despite my young age, I have already gained valuable experience
+                and expertise in the web development field. Through my
+                portfolio, I invite you to explore my work and witness my
+                unwavering commitment to the world of web development.
               </p>
             </div>
 
@@ -92,7 +98,7 @@ const page = () => {
             <div className="col-span-3  lg:order-3 xl:col-span-9 xl:flex-row xl:items-center flex flex-col items-end justify-between">
               <div className="flex flex-col xl:items-center  items-end justify-center">
                 <span className="inline-block text-7xl lg:text-6xl  sm:text-5xl xs:text-4xl dark:text-light font-bold">
-                  <AnimatedNumbers value={50} />+
+                  <AnimatedNumbers value={9} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize xl:text-center lg:text-lg sm:text-base xs:text-sm dark:text-light/75 text-dark/75">
                   Satisfied Clients
@@ -100,7 +106,7 @@ const page = () => {
               </div>
               <div className="flex flex-col lg:items-center items-end justify-center">
                 <span className="inline-block text-7xl lg:text-6xl  sm:text-5xl xs:text-4xl dark:text-light font-bold">
-                  <AnimatedNumbers value={40} />+
+                  <AnimatedNumbers value={13} />+
                 </span>
                 <h2 className="text-xl xl:text-center lg:text-lg sm:text-base xs:text-sm font-medium capitalize dark:text-light/75 text-dark/75">
                   Projects Completed
@@ -108,7 +114,7 @@ const page = () => {
               </div>
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block lg:text-6xl  sm:text-5xl xs:text-4xl dark:text-light text-7xl font-bold">
-                  <AnimatedNumbers value={20} />+
+                  <AnimatedNumbers value={17} />+
                 </span>
                 <h2 className="text-xl xl:text-center lg:text-lg sm:text-base xs:text-sm font-medium capitalize dark:text-light/75 text-dark/75">
                   Bugs Fixed
@@ -118,7 +124,7 @@ const page = () => {
           </div>
           <Skills className={"mt-16"} />
           <Experience />
-          <Education />
+          {/* <Education /> */}
         </Layout>
       </main>
     </>

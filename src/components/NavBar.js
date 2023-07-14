@@ -109,7 +109,7 @@ const NavBar = () => {
 
           <nav className="flex justify-center items-center">
             <motion.a
-              href="https://twitter.com"
+              href="https://twitter.com/CodewithAni12"
               target={"_blank"}
               className="w-7 mx-4"
               whileHover={{ y: -4, scale: 1.1 }}
@@ -117,7 +117,7 @@ const NavBar = () => {
               <TwitterIcon />
             </motion.a>
             <motion.a
-              href="https://twitter.com"
+              href="https://www.linkedin.com/in/anirudh-sahu-4b245327b/"
               target={"_blank"}
               className="w-7 mx-4 "
               whileHover={{ y: -4, scale: 1.1 }}
@@ -125,7 +125,7 @@ const NavBar = () => {
               <LinkedInIcon />
             </motion.a>
             <motion.a
-              href="https://github.com"
+              href="https://github.com/anirudh12032008"
               target={"_blank"}
               className="w-7 mx-4"
               whileHover={{ y: -4, scale: 1.1 }}
@@ -133,7 +133,7 @@ const NavBar = () => {
               <GithubIcon />
             </motion.a>
             <motion.a
-              href="https://pinterest.com"
+              href="www.pinterest.com/anirudh_sahu_12"
               target={"_blank"}
               className="w-7 mx-4"
               whileHover={{ y: -4, scale: 1.1 }}
@@ -141,7 +141,7 @@ const NavBar = () => {
               <PinterestIcon />
             </motion.a>
             <motion.a
-              href="https://instagram.com"
+              href="https://www.instagram.com/anirudh_sahu_12/"
               target={"_blank"}
               className="w-7 mx-4"
               whileHover={{ y: -4, scale: 1.1 }}
@@ -215,7 +215,7 @@ const NavBar = () => {
 
             <nav className="flex justify-center items-center flex-wrap mt-2">
               <motion.a
-                href="https://twitter.com"
+                href="https://twitter.com/CodewithAni12"
                 target={"_blank"}
                 className=" mx-4 sm:mx-1.5"
                 whileHover={{ y: -4, scale: 1.1 }}
@@ -223,7 +223,7 @@ const NavBar = () => {
                 <TwitterIcon width={"4vh"} height={"4vh"} />
               </motion.a>
               <motion.a
-                href="https://twitter.com"
+                href="https://www.linkedin.com/in/anirudh-sahu-4b245327b/"
                 target={"_blank"}
                 className=" mx-4 sm:mx-1.5"
                 whileHover={{ y: -4, scale: 1.1 }}
@@ -231,7 +231,7 @@ const NavBar = () => {
                 <LinkedInIcon width={"4vh"} height={"4vh"} />
               </motion.a>
               <motion.a
-                href="https://github.com"
+                href="https://github.com/anirudh12032008"
                 target={"_blank"}
                 className=" mx-4 sm:mx-1.5 bg-light dark:bg-dark rounded-full"
                 whileHover={{ y: -4, scale: 1.1 }}
@@ -239,7 +239,7 @@ const NavBar = () => {
                 <GithubIcon width={"4vh"} height={"4vh"} />
               </motion.a>
               <motion.a
-                href="https://pinterest.com"
+                href="www.pinterest.com/anirudh_sahu_12"
                 target={"_blank"}
                 className="bg-light sm:mx-1.5 dark:bg-dark rounded-full mx-4"
                 whileHover={{ y: -4, scale: 1.1 }}
@@ -247,7 +247,7 @@ const NavBar = () => {
                 <PinterestIcon width={"4vh"} height={"4vh"} />
               </motion.a>
               <motion.a
-                href="https://instagram.com"
+                href="https://www.instagram.com/anirudh_sahu_12/"
                 target={"_blank"}
                 className="w-7 sm:mx-1.5 mx-4"
                 whileHover={{ y: -4, scale: 1.1 }}

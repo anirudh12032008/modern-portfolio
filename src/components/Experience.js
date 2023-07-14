@@ -62,39 +62,39 @@ const Experience = () => {
           />
           <ul className="w-full flex flex-col justify-between items-start ml-4 sm:ml-2">
             <Details
-              position={"Software Engineer"}
-              company={"Google"}
-              time={"2022-Present"}
-              address={"Mountain View, CA"}
+              position={"AWS Innovate - AI/ML"}
+              company={"Amazon"}
+              time={"April 2023"}
+              address={"Online"}
               work={
-                "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+                " a transformative program that delved into the intricacies of data analysis, artificial intelligence, and machine learning. Through hands-on projects and expert guidance, I gained valuable insights and practical skills to drive innovation and leverage the power of data in problem-solving"
               }
             />
             <Details
-              position={"Intern"}
-              company={"Facebook"}
-              time={"Summer 2021"}
-              address={"Menlo Park, CA."}
+              position={"Mastering HTML & CSS"}
+              company={"Udemy"}
+              time={"Feb 2023"}
+              address={"Online"}
               work={
-                "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+                'I successfully completed a comprehensive course on Udemy, "Mastering CSS and HTML," gaining proficiency in building responsive and visually appealing web designs using CSS and HTML.'
               }
             />
             <Details
-              position={"Software Engineer"}
-              company={"Google"}
-              time={"2022-Present"}
-              address={"Mountain View, CA"}
+              position={"Zero To One Program"}
+              company={"Sheryians"}
+              time={"Dec 2022"}
+              address={"St Thomas School"}
               work={
-                "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+                "Completed the training on in depth Knwoledge of Computer IT Skills"
               }
             />
             <Details
-              position={"Software Engineer"}
-              company={"Google"}
-              time={"2022-Present"}
-              address={"Mountain View, CA"}
+              position={"Awsome Day Conference"}
+              company={"Amazon"}
+              time={"June 2022"}
+              address={"Online"}
               work={
-                "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+                "Immersed in the latest industry insights, best practices, and emerging technologies. Engaged with experts and gained valuable knowledge to further enhance my skills and stay at the forefront of web development trends."
               }
             />
           </ul>

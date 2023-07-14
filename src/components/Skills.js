@@ -40,10 +40,10 @@ const Skills = () => {
         </h1>
       </div>
       <div className="w-7/12 xl:w-10/12 lg:11/12 md:w-full  pl-2  lg:pt-0">
-        <BarView width={50}> Animation</BarView>
-        <BarView width={90}> Javascript</BarView>
-        <BarView width={80}> HTML</BarView>
-        <BarView width={100}> CSS</BarView>
+        <BarView width={100}> React</BarView>
+        <BarView width={95}> Javascript</BarView>
+        <BarView width={80}> DBMS</BarView>
+        <BarView width={90}> Node</BarView>
       </div>
     </div>
   );
