@@ -155,6 +155,8 @@ const page = () => {
                 img={anizon}
                 github={"https://github.com/anirudh12032008/e_commerce"}
               />
+            </div>
+
             <div className="col-span-12">
               <FeaturedProjects
                 title={"Two good co Clone"}
