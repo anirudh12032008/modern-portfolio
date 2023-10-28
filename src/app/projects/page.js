@@ -7,6 +7,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
 import magma from "../../../public/projects/1.jpg";
+import twogood from "../../../public/projects/8.PNG";
+import rayban from "../../../public/projects/9.PNG";
+import anizon from "../../../public/projects/10.PNG";
 import port from "../../../public/projects/2.jpg";
 import text from "../../../public/projects/3.jpg";
 import music from "../../../public/projects/4.jpg";
@@ -141,6 +144,41 @@ const page = () => {
             text={"Imagination Trumps Knowledge!"}
           />
           <div className="grid grid-cols-12 gap-y-32 gap-24 xl:gap-x-16 lg:gap-x-8 xs:gap-x-4 md:gap-y-24 sm:gap-y-6">
+          <div className="col-span-12">
+            <FeaturedProjects
+                title={"Anizon"}
+                type={"Featured Projects"}
+                summary={
+                  "I have created a e-commerce website with the help of nextjs and javascript I have also integrated Payment gateway with it"
+                }
+                link={"https://anizon.vercel.app/"}
+                img={anizon}
+                github={"https://github.com/anirudh12032008/e_commerce"}
+              />
+            <div className="col-span-12">
+              <FeaturedProjects
+                title={"Two good co Clone"}
+                type={"Featured Projects"}
+                summary={
+                  "Cloned the website of two good co with stuning animations"
+                }
+                link={"https://github.com/anirudh12032008/two_good_clone"}
+                img={twogood}
+                github={"https://anirudh12032008.github.io/two_good_clone/"}
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProjects
+                title={"Ray Ban Clone"}
+                type={"Featured Projects"}
+                summary={
+                  "I have cloned the website of ray ban as a web developer, replicating its animations, interactive features and user-friendly experience."
+                }
+                link={"https://anirudh12032008.github.io/redesi_clone/"}
+                img={rayban}
+                github={"https://github.com/anirudh12032008/redesi_clone"}
+              />
+            </div>
             <div className="col-span-12">
               <FeaturedProjects
                 title={"Magma Clone"}
